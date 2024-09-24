@@ -40,7 +40,7 @@ import { IThreadCommentMentionDataService, UniverSheetsThreadCommentPlugin, Univ
 import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
 import { UniverUIPlugin } from '@univerjs/ui';
-import { enUS, faIR, ruRU, viVN, zhCN, zhTW } from '../locales';
+import { enUS, faIR, frFR, ruRU, viVN, zhCN, zhTW } from '../locales';
 
 /* eslint-disable-next-line node/prefer-global/process */
 const IS_E2E: boolean = !!process.env.IS_E2E;
@@ -85,6 +85,7 @@ const univer = new Univer({
     locales: {
         [LocaleType.ZH_CN]: zhCN,
         [LocaleType.EN_US]: enUS,
+        [LocaleType.FR_FR]: frFR,
         [LocaleType.RU_RU]: ruRU,
         [LocaleType.ZH_TW]: zhTW,
         [LocaleType.VI_VN]: viVN,
