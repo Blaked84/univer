@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
+import type { IAccessor } from '@univerjs/core';
+import type { IMenuButtonItem, IMenuSelectorItem } from '@univerjs/ui';
 import { LocaleType } from '@univerjs/core';
 import { defaultTheme, greenTheme } from '@univerjs/design';
 import { MenuItemType } from '@univerjs/ui';
-import type { IAccessor } from '@univerjs/core';
-import type { IMenuButtonItem, IMenuSelectorItem } from '@univerjs/ui';
 
 import { CreateFloatDomCommand } from '../commands/commands/float-dom.command';
 import { CreateEmptySheetCommand, DisposeCurrentUnitCommand, DisposeUniverCommand, LoadSheetSnapshotCommand } from '../commands/commands/unit.command';
@@ -46,7 +46,7 @@ export function LocaleMenuItemFactory(accessor: IAccessor): IMenuSelectorItem {
                 value: LocaleType.EN_US,
             },
             {
-                label: 'French',
+                label: 'Français',
                 value: LocaleType.FR_FR,
             },
             {
